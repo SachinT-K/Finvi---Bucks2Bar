@@ -56,3 +56,10 @@ GitHub CLI Tool
  2. GHCS - shortform command of Github copilot suggest
  3. GHCS - shortform command of Github copilot explain
  4. then provide commands like "ghcs + prompt"
+
+
+ Comment driven prompts and code snippets
+ - vscode + settings + snippets + select type of file( eg: json - to create dummy json snippet)
+ - or open copilot chat and prompt "create code snippet to create dummy json file"
+ - after creating snippet , use it in all components of project to create json data with snippet structure.
+ - code snippets are reusable code prompts where can be used in all components directly without writing same code again and again.
