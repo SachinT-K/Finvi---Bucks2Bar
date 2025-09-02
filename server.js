@@ -18,7 +18,7 @@ app.post("/send-email", async (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: "resend",
-      pass: "re_MJpJu3k5_54yX8xMttavGAYpWSRjeds8X",
+      pass: "re_gKgPj7eu_9yQ1e7jKRo4hKY3yoi95TN47", // Replace with your resend API Passkey
     },
   });
 

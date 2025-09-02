@@ -1,0 +1,41 @@
+Project using GitHub Copilot pairr programming
+
+Setup details
+1. VS Code
+2. Live Server, GitHub Copilot, GitHub Copilot chat, default browser extensions
+3. code-refactor.zip - for "Use GitHub Copilot Chat to refactor Javascript code".
+4. code-with-server.zip - "Use GitHub Copilot to generate server code with express (+ prompt tips)" and 24 titled "Use GitHub Copilot chat to setup sending emails using Resend".
+5. code.zip - this contains all the code we generate in this course.
+
+copilot commands
+/new - to create new project/workspace
+@workspace - to get suggestions for current file
+
+Github copilot features
+1. Inline chat - select the code -> click on bulb icon -> modify with copilot -> give promt
+2. Quick chat - "ctrl + I" -> give promt
+
+Project Coding
+- create project using /new
+- add bootstrap CDNs using @workspace to index.html
+- create navbars, navs and tabs, layouts, input groups(in forms) from bootstrap
+- use chart.js library and integrate it to our project along with CDNs for creating charts on income and expenses using copilot
+- ways for providing context to copilot
+ 1. open file and add prompt in chat
+ 2. close all files and add @workspace + add prompt
+ 3. close all files and add prompt + attach file where code needs to be added
+
+- creating test cases 
+  1. @workspace /tests + add prompt by selecting code for which tests needs to be written
+
+- explain code
+  1. @workspace /explain + add prompt by selecting code for which explaination is required
+
+- fix errors
+  1. @terminal + add prompt by selecting error
+
+Server setup and backend code
+
+- install nodemailer, express, body-parser, cors libraries
+- "Resend" service is used for sending mails from nodemailer and tracking them via SMTP
+- Sign in to Resend , click on API keys , generate new API key , put that new key in "pass" field in server.js file
