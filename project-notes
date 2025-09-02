@@ -12,6 +12,10 @@ copilot commands
 @workspace - to get suggestions for current file
 @vscode - to change settings of vs code( eg - theme)
 /fix - select code and type /fix + prompt to resolve
+#selection - instead of typing "for slected line of code" in prompt
+#file: "file name" - to get file for code modifications
+#terminalLastCommand , #terminalSelection , @vscodeAPI
+/help - to get all github copilot shortcuts
 
 Github copilot features
 1. Inline chat - select the code -> click on bulb icon -> modify with copilot -> give promt
