@@ -10,6 +10,8 @@ Setup details
 copilot commands
 /new - to create new project/workspace
 @workspace - to get suggestions for current file
+@vscode - to change settings of vs code( eg - theme)
+/fix - select code and type /fix + prompt to resolve
 
 Github copilot features
 1. Inline chat - select the code -> click on bulb icon -> modify with copilot -> give promt
@@ -39,3 +41,18 @@ Server setup and backend code
 - install nodemailer, express, body-parser, cors libraries
 - "Resend" service is used for sending mails from nodemailer and tracking them via SMTP
 - Sign in to Resend , click on API keys , generate new API key , put that new key in "pass" field in server.js file
+
+Features 
+1. GitHub Mobile
+2. GitHub CLI Tool
+
+GitHub CLI Tool
+- gh auth start
+- gh extension install github/gh-copilot
+- gh copilot
+- gh copilot suggest "prompt"
+- GHCS and GHCE usage
+ 1. set up github alias to use above commands using "gh copilot alias --help"
+ 2. GHCS - shortform command of Github copilot suggest
+ 3. GHCS - shortform command of Github copilot explain
+ 4. then provide commands like "ghcs + prompt"

@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 app.use(bodyParser.json({ limit: "10mb" })); // Increase limit for large images
@@ -18,7 +19,7 @@ app.post("/send-email", async (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: "resend",
-      pass: "re_gKgPj7eu_9yQ1e7jKRo4hKY3yoi95TN47", // Replace with your resend API Passkey
+      pass: process.env.RESEND_API_KEY, // Replace with your resend API Passkey
     },
   });
 
